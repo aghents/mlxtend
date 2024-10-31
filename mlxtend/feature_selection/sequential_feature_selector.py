@@ -662,7 +662,7 @@ class SequentialFeatureSelector(_BaseXComposition, MetaEstimatorMixin):
                 best_subset = k
 
         k_score = max_score
-        if k_score == -np.inf::
+        if k_score == -np.inf:
             # i.e. all keys of self.subsets_ are not in interval `[self.min_k, self.max_k]`
             # this happens if KeyboardInterrupt happens
             keys = list(self.subsets_.keys())
